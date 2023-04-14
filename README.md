@@ -12,3 +12,4 @@ For instance, in a product ordering system, a facade can be used to expose only 
 In addition, facade patter is also a powerful approach to do software project management. By using a facade, developers would have a communication interface, which reduces the coupling of between components, enables greater flexibility and the ability to adapt to changing requirements.
 ## 5. Our implementation
 In our implementation, we created a _Shape_ interface which defines 3 methods: 1. Drawing a shape 2. Calculating the perimeter of a shape 3. Calculating the area of a shape. We made 3 concrete classes (_Triangle_, _Rectangle_ and _Circle_) to implement the _Shape_ interface. Afterwards, we created a facade class _ShapeManager_ to integrate all methods in 3 concrete classes. It would later be called by the driver class and delegate specific tasks to the concrete classes.
+UML diagram of our code:
