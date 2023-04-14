@@ -14,12 +14,12 @@ public interface Shape {
    *
    * @return the perimeter of this shape
    */
-  int calculatePerimeter();
+  double calculatePerimeter();
 
   /**
    * Computes and returns the area of this shape.
    *
    * @return  the area of this shape
    */
-  double calculateArea():
+  double calculateArea();
 }
