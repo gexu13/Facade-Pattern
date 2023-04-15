@@ -124,6 +124,92 @@ public class Circle implements Shape {
 }
 
 ```
+Step 3: Create Facade Interface
+```Java
+public class ShapeManager {
+  private final Shape triangle;
+  private final Shape rectangle;
+  private final Shape circle;
+  
+  public ShapeManager(double triangleBase, double triangleHeight, double rectangleLength,
+      double rectangleWidth, double circleDiameter) {
+    triangle = new Triangle(triangleBase, triangleHeight);
+    rectangle = new Rectangle(rectangleLength, rectangleWidth);
+    circle = new Circle(circleDiameter);
+  }
+  
+  public void drawTriangle() {
+    triangle.draw();
+  }
+
+  public void drawRectangle() {
+    rectangle.draw();
+  }
+
+  public void drawCircle() {
+    circle.draw();
+  }
+
+  public double calculateTrianglePerimeter() {
+    return triangle.calculatePerimeter();
+  }
+
+  public double calculateTriangleArea() {
+    return triangle.calculateArea();
+  }
+
+  public double calculateRectanglePerimeter() {
+    return rectangle.calculatePerimeter();
+  }
+
+  public double calculateRectangleArea() {
+    return rectangle.calculateArea();
+  }
+
+  public double calculateCirclePerimeter() {
+    return circle.calculatePerimeter();
+  }
+
+  public double calculateCircleArea() {
+    return circle.calculateArea();
+  }
+}
+
+```
+Step 4: Create driver(Demo) class
+```Java
+public class Demo {
+
+  public static void main(String[] args) {
+    ShapeManager shapeManager = new ShapeManager(4.0, 5.0,
+        6.0, 7.0, 8.0);
+
+    shapeManager.drawTriangle();
+    shapeManager.drawRectangle();
+    shapeManager.drawCircle();
+
+    double trianglePerimeter = shapeManager.calculateTrianglePerimeter();
+    System.out.printf("Triangle Perimeter: %.2f%n", trianglePerimeter);
+
+    double triangleArea = shapeManager.calculateTriangleArea();
+    System.out.printf("Triangle Area: %.2f%n", triangleArea);
+
+    double rectanglePerimeter = shapeManager.calculateRectanglePerimeter();
+    System.out.printf("Rectangle Perimeter: %.2f%n", rectanglePerimeter);
+
+    double rectangleArea = shapeManager.calculateRectangleArea();
+    System.out.printf("Rectangle Area: %.2f%n", rectangleArea);
+
+    double circlePerimeter = shapeManager.calculateCirclePerimeter();
+    System.out.printf("Circle Perimeter: %.2f%n", circlePerimeter);
+
+    double circleArea = shapeManager.calculateCircleArea();
+    System.out.printf("Circle Area: %.2f%n", circleArea);
+
+  }
+}
+
+```
 ## 7. References
 1. Facade design pattern. (n.d.). Retrieved April 15, 2023, from _https://cs.uwaterloo.ca/~m2nagapp/courses/CS446/1195/Arch_Design_Activity/Facade.pdf_
 2. Facade Design Pattern. SourceMaking. (n.d.). Retrieved April 15, 2023, from _https://sourcemaking.com/design_patterns/facade_ 
