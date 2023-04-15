@@ -209,6 +209,18 @@ public class Demo {
   }
 }
 ```
+Step 5: Verify output
+```Java
+Drawing a triangle...with its base of 4.00 and height of 5.00.
+Drawing a rectangle...with its length of 6.00 and width of 7.00.
+Drawing a circle...with its diameter of 8.00.
+Triangle Perimeter: 14.77
+Triangle Area: 10.00
+Rectangle Perimeter: 26.00
+Rectangle Area: 42.00
+Circle Perimeter: 25.13
+Circle Area: 50.27
+```
 How to run it?
 
 It is simple to run the program as the clients only interact with the facade interface (ShapeManager) which manages all components in the subsystems including Triangle, Rectangle and Circle.
