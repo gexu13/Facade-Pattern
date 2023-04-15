@@ -23,8 +23,8 @@ In our implementation, we created a _Shape_ interface which defines 3 methods: 1
 
 UML diagram of our code:
 ![UML](https://github.com/gexu13/Facade-Pattern/blob/main/UML.png)
-## 6 Code Walk
-## 7 References
+## 6. Code Walk
+## 7. References
 1. Facade design pattern. (n.d.). Retrieved April 15, 2023, from _https://cs.uwaterloo.ca/~m2nagapp/courses/CS446/1195/Arch_Design_Activity/Facade.pdf_
 2. Facade Design Pattern. SourceMaking. (n.d.). Retrieved April 15, 2023, from _https://sourcemaking.com/design_patterns/facade_ 
 3. Facade pattern: Unified interface for software projects. IONOS Digital Guide. (n.d.). Retrieved April 15, 2023, from _https://www.ionos.com/digitalguide/websites/web-development/whats-the-facade-pattern/_
