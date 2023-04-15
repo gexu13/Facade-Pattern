@@ -23,6 +23,7 @@ In addition, facade patter is also a powerful approach to do software project ma
 In our implementation, we created a _Shape_ interface which defines 3 methods: 1. Drawing a shape 2. Calculating the perimeter of a shape 3. Calculating the area of a shape. We made 3 concrete classes (_Triangle_, _Rectangle_ and _Circle_) to implement the _Shape_ interface. Afterwards, we created a facade class _ShapeManager_ to integrate all methods in 3 concrete classes. It would later be called by the driver class and delegate specific tasks to the concrete classes.
 
 UML diagram of our code:
+![UML](https://github.com/gexu13/Facade-Pattern/blob/main/UML.pdf)
 ## 6 Code Walk
 ## 7 References
 1. Facade design pattern. (n.d.). Retrieved April 15, 2023, from _https://cs.uwaterloo.ca/~m2nagapp/courses/CS446/1195/Arch_Design_Activity/Facade.pdf_
