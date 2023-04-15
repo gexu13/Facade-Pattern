@@ -67,6 +67,63 @@ public class Triangle implements Shape {
 }
 
 ```
+```Java
+public class Rectangle implements Shape {
+  private final double length;
+  private final double width;
+  
+
+  public Rectangle(double length, double width) {
+    this.length = length;
+    this.width = width;
+  }
+
+  @Override
+  public void draw() {
+    String s = String.format("Drawing a rectangle...with its length of %.2f and width of %.2f.",
+        length, width);
+    System.out.println(s);
+  }
+
+  @Override
+  public double calculatePerimeter() {
+    return 2 * length + 2 * width;
+  }
+
+  @Override
+  public double calculateArea() {
+    return length * width;
+  }
+}
+
+```
+```Java
+public class Circle implements Shape {
+  private final double diameter;
+  
+
+  public Circle(double diameter) {
+    this.diameter = diameter;
+  }
+
+  @Override
+  public void draw() {
+    String s = String.format("Drawing a circle...with its diameter of %.2f.", diameter);
+    System.out.println(s);
+  }
+
+  @Override
+  public double calculatePerimeter() {
+    return (Math.PI * diameter);
+  }
+
+  @Override
+  public double calculateArea() {
+    return (Math.PI * Math.pow(diameter, 2) / 4);
+  }
+}
+
+```
 ## 7. References
 1. Facade design pattern. (n.d.). Retrieved April 15, 2023, from _https://cs.uwaterloo.ca/~m2nagapp/courses/CS446/1195/Arch_Design_Activity/Facade.pdf_
 2. Facade Design Pattern. SourceMaking. (n.d.). Retrieved April 15, 2023, from _https://sourcemaking.com/design_patterns/facade_ 
