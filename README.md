@@ -72,7 +72,6 @@ public class Rectangle implements Shape {
   private final double length;
   private final double width;
   
-
   public Rectangle(double length, double width) {
     this.length = length;
     this.width = width;
@@ -101,7 +100,6 @@ public class Rectangle implements Shape {
 public class Circle implements Shape {
   private final double diameter;
   
-
   public Circle(double diameter) {
     this.diameter = diameter;
   }
