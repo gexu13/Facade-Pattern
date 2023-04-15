@@ -5,8 +5,8 @@ package facadepattern;
  */
 
 public class Rectangle implements Shape {
-  private double length;
-  private double width;
+  private final double length;
+  private final double width;
 
   /**
    * Construct a rectangle object with given length and width.

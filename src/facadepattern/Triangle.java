@@ -4,8 +4,8 @@ package facadepattern;
  * This class represents a triangle. It offers all the operations mandated by the Shape interface.
  */
 public class Triangle implements Shape {
-  private double base;
-  private double height;
+  private final double base;
+  private final double height;
 
   /**
    * Construct a triangle object with given base and height.
