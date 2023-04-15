@@ -214,6 +214,7 @@ Step 5: Verify output
 Drawing a triangle...with its base of 4.00 and height of 5.00.
 Drawing a rectangle...with its length of 6.00 and width of 7.00.
 Drawing a circle...with its diameter of 8.00.
+
 Triangle Perimeter: 14.77
 Triangle Area: 10.00
 Rectangle Perimeter: 26.00
