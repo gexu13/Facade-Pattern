@@ -1,4 +1,4 @@
-package shape;
+package facadepattern;
 
 /**
  * This class represents a circle. It offers all the operations mandated by the Shape interface.

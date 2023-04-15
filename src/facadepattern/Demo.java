@@ -1,4 +1,4 @@
-package shape;
+package facadepattern;
 
 /**
  * This is a demo class that interacts with ShapeManager interface.

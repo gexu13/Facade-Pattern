@@ -1,4 +1,4 @@
-package shape;
+package facadepattern;
 
 /**
  * This class represents a shape manager. It serves as a facade to delegate user calls to concrete

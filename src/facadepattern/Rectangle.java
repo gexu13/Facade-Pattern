@@ -1,4 +1,4 @@
-package shape;
+package facadepattern;
 
 /**
  * This class represents a rectangle. It offers all the operations mandated by the Shape interface.
