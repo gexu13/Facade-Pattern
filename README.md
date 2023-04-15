@@ -17,7 +17,7 @@ The facade pattern is particularly useful when dealing with complex systems made
 
 For instance, in a product ordering system, a facade (customer representative) services as a single interface to expose only essential features and operations needed for the client to place an order. This makes the system more intuitive, less error-prone, and easier to maintain. 
 ![Analogy](https://github.com/gexu13/Facade-Pattern/blob/main/Analogy.png)
-[Cited from REFACTORING GURU](https://refactoring.guru/design-patterns/facade)
+                                  [Cited from REFACTORING GURU](https://refactoring.guru/design-patterns/facade)
 
 In addition, facade patter is also a powerful approach to do software project management. By using a facade, developers would have a communication interface, which reduces the coupling of between components, enables greater flexibility and the ability to adapt to changing requirements.
 ## 5. Our implementation
