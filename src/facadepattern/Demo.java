@@ -21,22 +21,22 @@ public class Demo {
     shapeManager.drawCircle();
 
     double trianglePerimeter = shapeManager.calculateTrianglePerimeter();
-    System.out.println(String.format("Triangle Perimeter: %.2f", trianglePerimeter));
+    System.out.printf("Triangle Perimeter: %.2f%n", trianglePerimeter);
 
     double triangleArea = shapeManager.calculateTriangleArea();
-    System.out.println(String.format("Triangle Area: %.2f", triangleArea));
+    System.out.printf("Triangle Area: %.2f%n", triangleArea);
 
     double rectanglePerimeter = shapeManager.calculateRectanglePerimeter();
-    System.out.println(String.format("Rectangle Perimeter: %.2f", rectanglePerimeter));
+    System.out.printf("Rectangle Perimeter: %.2f%n", rectanglePerimeter);
 
     double rectangleArea = shapeManager.calculateRectangleArea();
-    System.out.println(String.format("Rectangle Area: %.2f%n", rectangleArea));
+    System.out.printf("Rectangle Area: %.2f%n", rectangleArea);
 
     double circlePerimeter = shapeManager.calculateCirclePerimeter();
-    System.out.println(String.format("Circle Perimeter: %.2f", circlePerimeter));
+    System.out.printf("Circle Perimeter: %.2f%n", circlePerimeter);
 
     double circleArea = shapeManager.calculateCircleArea();
-    System.out.println(String.format("Circle Area: %.2f", circleArea));
+    System.out.printf("Circle Area: %.2f%n", circleArea);
 
   }
 }
