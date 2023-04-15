@@ -209,6 +209,10 @@ public class Demo {
   }
 }
 
+How to run it?
+It is simple to run the program as the clients only interact with the facade interface (ShapeManager) which manages all components in the subsystems including Triangle, Rectangle and Circle.
+In the Demo class, clients are able to call methods of ShapeManager and it would delegate specific taskes to concrate classes. For example, when shapeManager.drawTriangle() is called, a triangle would be drawn.
+
 ```
 ## 7. References
 1. Facade design pattern. (n.d.). Retrieved April 15, 2023, from _https://cs.uwaterloo.ca/~m2nagapp/courses/CS446/1195/Arch_Design_Activity/Facade.pdf_
