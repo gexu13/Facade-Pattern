@@ -24,6 +24,7 @@ In our implementation, we created a _Shape_ interface which defines 3 methods: 1
 UML diagram of our code:
 ![UML](https://github.com/gexu13/Facade-Pattern/blob/main/UML.png)
 ## 6. Code Walk
+Step 1: Create Shape Interface
 ```Java
 public interface Shape {
 
