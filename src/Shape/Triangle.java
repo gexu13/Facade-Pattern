@@ -21,7 +21,8 @@ public Triangle(int base, int height) {
 
 @Override
   public void draw() {
-  System.out.println("Drawing a triangle.");
+  String s = String.format("Drawing a triangle...with its base of %d and height of %d.", base, height);
+  System.out.println(s);
 }
 
 @Override

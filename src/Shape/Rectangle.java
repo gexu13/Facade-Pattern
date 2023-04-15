@@ -22,7 +22,8 @@ public class Rectangle implements Shape{
 
   @Override
   public void draw() {
-    System.out.println("Drawing a rectangle.");
+    String s = String.format("Drawing a rectangle...with its length of %d and width of %d.", length, width);
+    System.out.println(s);
   }
 
   @Override
