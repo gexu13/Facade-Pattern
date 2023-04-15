@@ -5,7 +5,7 @@ package Shape;
  */
 
 public class Circle implements Shape{
-  private int diameter;
+  private double diameter;
 
   /**
    * Construct a circle object with given diameter.
@@ -13,13 +13,13 @@ public class Circle implements Shape{
    * @param diameter the diameter of a circle
    */
 
-  public Circle(int diameter) {
+  public Circle(double diameter) {
     this.diameter = diameter;
   }
 
   @Override
   public void draw() {
-    String s = String.format("Drawing a circle...with its diameter of %d.", diameter);
+    String s = String.format("Drawing a circle...with its diameter of %.2f.", diameter);
     System.out.println(s);
   }
 

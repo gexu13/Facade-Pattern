@@ -14,10 +14,11 @@ public class ShapeManager {
    * Construct a ShapeManager facade with given objects of concrete classes.
    */
 
-  public ShapeManager() {
-    triangle = new Triangle(3, 7);
-    rectangle = new Rectangle(4, 5);
-    circle = new Circle(2);
+  public ShapeManager(double triangleBase, double triangleHeight,
+      double rectangleLength, double rectangleWidth, double circleDiameter) {
+    triangle = new Triangle(triangleBase, triangleHeight);
+    rectangle = new Rectangle(rectangleLength, rectangleWidth);
+    circle = new Circle(circleDiameter);
   }
 
   /**

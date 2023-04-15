@@ -13,7 +13,8 @@ public class Demo {
    */
 
   public static void main(String[] args) {
-    ShapeManager shapeManager = new ShapeManager();
+    ShapeManager shapeManager = new ShapeManager(4.0, 5.0,
+        6.0,7.0,8.0);
 
     shapeManager.drawTriangle();
     shapeManager.drawRectangle();
@@ -26,7 +27,7 @@ public class Demo {
     double circlePerimeter;
     double circleArea;
 
-    System.out.println(shapeManager.calculateTrianglePerimeter());
+    //System.out.println(shapeManager.calculateTrianglePerimeter());
 
   }
 }

@@ -5,8 +5,8 @@ package Shape;
  */
 
 public class Rectangle implements Shape{
-  private int length;
-  private int width;
+  private double length;
+  private double width;
 
   /**
    * Construct a rectangle object with given length and width.
@@ -15,14 +15,14 @@ public class Rectangle implements Shape{
    * @param width the width of a rectangle
    */
 
-  public Rectangle(int length, int width) {
+  public Rectangle(double length, double width) {
     this.length = length;
     this.width = width;
   }
 
   @Override
   public void draw() {
-    String s = String.format("Drawing a rectangle...with its length of %d and width of %d.", length, width);
+    String s = String.format("Drawing a rectangle...with its length of %.2f and width of %.2f.", length, width);
     System.out.println(s);
   }
 

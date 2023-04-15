@@ -4,8 +4,8 @@ package Shape;
  * This class represents a triangle. It offers all the operations mandated by the Shape interface.
  */
 public class Triangle implements Shape{
-private int base;
-private int height;
+private double base;
+private double height;
 
   /**
    * Construct a triangle object with given base and height.
@@ -14,14 +14,14 @@ private int height;
    * @param height the height of a triangle
    */
 
-public Triangle(int base, int height) {
+public Triangle(double base, double height) {
   this.base = base;
   this.height = height;
 }
 
 @Override
   public void draw() {
-  String s = String.format("Drawing a triangle...with its base of %d and height of %d.", base, height);
+  String s = String.format("Drawing a triangle...with its base of %.2f and height of %.2f.", base, height);
   System.out.println(s);
 }
 
