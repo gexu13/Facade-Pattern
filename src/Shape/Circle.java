@@ -25,7 +25,7 @@ public class Circle implements Shape{
 
   @Override
   public double calculatePerimeter() {
-    return Math.round(Math.PI * diameter);
+    return (Math.PI * diameter);
   }
 
   @Override
