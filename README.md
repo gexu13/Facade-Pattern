@@ -2,10 +2,11 @@
 Façade Pattern Team 2 - Chuwei Cai, Zi Hao Li, Gavin(Ge) Xu
 ## 1. Overview
 Facade design pattern is a structural design pattern that was published in 1994. It is a sample solution for software developers to merging different interfaces in a complex system into a unified, higher-level central facade. 
+
 Key vocabularies:
-- **Client**: an object or a piece of code that utilizes facade interface.
-- **Facade**: a class that serves as a front-facing interface masking more complex underlying or structural code. It wraps complicated subsystems and provides a set of functionalities to clients.
-- **Subsystem**: a collection of classes that provides some functionalities.
+- **_Client_**: an object or a piece of code that utilizes facade interface.
+- **_Facade_**: a class that serves as a front-facing interface masking more complex underlying or structural code. It wraps complicated subsystems and provides a set of functionalities to clients.
+- **_Subsystem_**: a collection of classes that provides some functionalities.
 ## 2. Intent
 The intent of facade is to provide users a single entry point when accessing the system. This allows users to interact with a simple interface instead of knowing about multiple classes in the system. 
 ## 3. Features
