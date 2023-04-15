@@ -8,12 +8,12 @@ Key vocabularies:
 - **_Facade_**: a class that serves as a front-facing interface masking more complex underlying or structural code. It wraps complicated subsystems and provides a set of functionalities to clients.
 - **_Subsystem_**: a collection of classes that provides some functionalities.
 ## 2. Intent
-The intent of facade is to provide users a single entry point when accessing the system. This allows users to interact with a simple interface instead of knowing about multiple classes in the system. 
+The intent of facade is to provide clients a single entry point when accessing the system. This allows clinets to interact with a simple interface instead of knowing much about multiple classes in subsystems. 
 ## 3. Features
 ![Facade_Features](https://github.com/gexu13/Facade-Pattern/blob/main/Facade_Features.png)
 [Cited from Digital Guide IONOS](https://www.ionos.com/digitalguide/websites/web-development/whats-the-facade-pattern/)
 ## 4. When should we use it?
-The facade pattern is particularly useful when dealing with complex systems made up of multiple components. By using a facade,  we provide a simple and easy-to-use interface for users to perform complex tasks without needing to understand the underlying system. 
+The facade pattern is particularly useful when dealing with complex systems made up of multiple components. By using a facade,  we provide a simple and easy-to-use interface for clients to perform complex tasks without needing to understand the underlying subsystems. 
 For instance, in a product ordering system, a facade can be used to expose only the essential features and operations needed for the user to place an order. This makes the system more intuitive, less error-prone, and easier to maintain over time. 
 In addition, facade patter is also a powerful approach to do software project management. By using a facade, developers would have a communication interface, which reduces the coupling of between components, enables greater flexibility and the ability to adapt to changing requirements.
 ## 5. Our implementation
