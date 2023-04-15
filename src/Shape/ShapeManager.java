@@ -6,9 +6,9 @@ package Shape;
  */
 
 public class ShapeManager {
-  private Shape triangle;
-  private Shape rectangle;
-  private Shape circle;
+  private final Shape triangle;
+  private final Shape rectangle;
+  private final Shape circle;
 
   /**
    * Construct a ShapeManager facade with given objects of concrete classes.
@@ -51,9 +51,8 @@ public class ShapeManager {
    * @return the perimeter of this triangle
    */
 
-  public String calculateTrianglePerimeter() {
-    return String.format("The triangle has a perimeter of %.1f.", triangle.calculatePerimeter());
-
+  public double calculateTrianglePerimeter() {
+    return triangle.calculatePerimeter();
   }
 
   /**

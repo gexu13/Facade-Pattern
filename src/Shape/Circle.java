@@ -5,7 +5,7 @@ package Shape;
  */
 
 public class Circle implements Shape{
-  private double diameter;
+  private final double diameter;
 
   /**
    * Construct a circle object with given diameter.
@@ -30,6 +30,6 @@ public class Circle implements Shape{
 
   @Override
   public double calculateArea() {
-    return Math.round(Math.PI * Math.pow(diameter, 2) / 4);
+    return (Math.PI * Math.pow(diameter, 2) / 4);
   }
 }

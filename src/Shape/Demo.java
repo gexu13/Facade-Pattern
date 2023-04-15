@@ -20,14 +20,23 @@ public class Demo {
     shapeManager.drawRectangle();
     shapeManager.drawCircle();
 
-    double trianglePerimeter;
-    double triangleArea;
-    double rectanglePerimeter;
-    double rectangleArea;
-    double circlePerimeter;
-    double circleArea;
+    double trianglePerimeter = shapeManager.calculateTrianglePerimeter();
+    System.out.println(String.format("Triangle Perimeter: %.2f", trianglePerimeter));
 
-    //System.out.println(shapeManager.calculateTrianglePerimeter());
+    double triangleArea = shapeManager.calculateTriangleArea();
+    System.out.println(String.format("Triangle Area: %.2f", triangleArea));
+
+    double rectanglePerimeter = shapeManager.calculateRectanglePerimeter();
+    System.out.println(String.format("Rectangle Perimeter: %.2f", rectanglePerimeter));
+
+    double rectangleArea = shapeManager.calculateRectangleArea();
+    System.out.println(String.format("Rectangle Area: %.2f%n", rectangleArea));
+
+    double circlePerimeter = shapeManager.calculateCirclePerimeter();
+    System.out.println(String.format("Circle Perimeter: %.2f", circlePerimeter));
+
+    double circleArea = shapeManager.calculateCircleArea();
+    System.out.println(String.format("Circle Area: %.2f", circleArea));
 
   }
 }
