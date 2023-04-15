@@ -218,7 +218,7 @@ Circle Area: 50.27
 ```
 How to run it?
 
-It is simple to run the program as the clients only interact with the facade interface (ShapeManager) which manages all components in the subsystems including Triangle, Rectangle and Circle.
+It is simple to run the program as the clients only interact with the facade (ShapeManager) which manages all components in the subsystems including Triangle, Rectangle and Circle.
 In the Demo class, clients are able to call methods of ShapeManager and it would delegate specific taskes to concrate classes. For example, when shapeManager.drawTriangle() is called, a triangle would be drawn.
 
 ## 7. References
