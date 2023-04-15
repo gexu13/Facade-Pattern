@@ -28,3 +28,4 @@ UML diagram of our code:
 2. Facade Design Pattern. SourceMaking. (n.d.). Retrieved April 15, 2023, from _https://sourcemaking.com/design_patterns/facade_ 
 3. Facade pattern: Unified interface for software projects. IONOS Digital Guide. (n.d.). Retrieved April 15, 2023, from _https://www.ionos.com/digitalguide/websites/web-development/whats-the-facade-pattern/_
 4. Design patterns - facade pattern. Tutorials Point. (n.d.). Retrieved April 15, 2023, from _https://www.tutorialspoint.com/design_pattern/facade_pattern.htm_ 
+5. Facade. Refactoring.Guru. (n.d.). Retrieved April 15, 2023, from _https://refactoring.guru/design-patterns/facade_ 
