@@ -35,6 +35,38 @@ public interface Shape {
   double calculateArea();
 }
 ```
+Step 2: Create concrete classes Triangle, Rectangle and Circle implementing Shape Interface
+```Java
+public class Triangle implements Shape {
+  private final double base;
+  private final double height;
+  
+  public Triangle(double base, double height) {
+    this.base = base;
+    this.height = height;
+  }
+
+  @Override
+  public void draw() {
+    String s = String.format("Drawing a triangle...with its base of %.2f and height of %.2f.", base,
+        height);
+    System.out.println(s);
+  }
+
+  @Override
+  public double calculatePerimeter() {
+    double side;
+    side = Math.sqrt(Math.pow(height, 2) + Math.pow(0.5 * base, 2));
+    return 2 * side + base;
+  }
+
+  @Override
+  public double calculateArea() {
+    return 0.5 * base * height;
+  }
+}
+
+```
 ## 7. References
 1. Facade design pattern. (n.d.). Retrieved April 15, 2023, from _https://cs.uwaterloo.ca/~m2nagapp/courses/CS446/1195/Arch_Design_Activity/Facade.pdf_
 2. Facade Design Pattern. SourceMaking. (n.d.). Retrieved April 15, 2023, from _https://sourcemaking.com/design_patterns/facade_ 
