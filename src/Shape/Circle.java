@@ -1,10 +1,10 @@
-package Shape;
+package shape;
 
 /**
  * This class represents a circle. It offers all the operations mandated by the Shape interface.
  */
 
-public class Circle implements Shape{
+public class Circle implements Shape {
   private final double diameter;
 
   /**

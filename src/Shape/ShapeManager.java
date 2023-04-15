@@ -1,10 +1,9 @@
-package Shape;
+package shape;
 
 /**
- * This class represents a shape manager. It serves as a facade to delegate user calls
- * to concrete classes.
+ * This class represents a shape manager. It serves as a facade to delegate user calls to concrete
+ * classes.
  */
-
 public class ShapeManager {
   private final Shape triangle;
   private final Shape rectangle;
@@ -12,10 +11,14 @@ public class ShapeManager {
 
   /**
    * Construct a ShapeManager facade with given objects of concrete classes.
+   * @param triangleBase the base length of the triangle.
+   * @param triangleHeight  the height of the triangle.
+   * @param rectangleLength  the length of the rectangle.
+   * @param rectangleWidth the width of the rectangle.
+   * @param circleDiameter the diameter of the circle.
    */
-
-  public ShapeManager(double triangleBase, double triangleHeight,
-      double rectangleLength, double rectangleWidth, double circleDiameter) {
+  public ShapeManager(double triangleBase, double triangleHeight, double rectangleLength,
+      double rectangleWidth, double circleDiameter) {
     triangle = new Triangle(triangleBase, triangleHeight);
     rectangle = new Rectangle(rectangleLength, rectangleWidth);
     circle = new Circle(circleDiameter);
@@ -24,7 +27,6 @@ public class ShapeManager {
   /**
    * delegate user call of drawing a triangle to class Triangle.
    */
-
   public void drawTriangle() {
     triangle.draw();
   }
@@ -32,7 +34,6 @@ public class ShapeManager {
   /**
    * delegate user call of drawing a rectangle to class Rectangle.
    */
-
   public void drawRectangle() {
     rectangle.draw();
   }
@@ -40,7 +41,6 @@ public class ShapeManager {
   /**
    * delegate user call of drawing a circle to class Circle.
    */
-
   public void drawCircle() {
     circle.draw();
   }
@@ -50,7 +50,6 @@ public class ShapeManager {
    *
    * @return the perimeter of this triangle
    */
-
   public double calculateTrianglePerimeter() {
     return triangle.calculatePerimeter();
   }
@@ -60,8 +59,6 @@ public class ShapeManager {
    *
    * @return the area of this triangle
    */
-
-
   public double calculateTriangleArea() {
     return triangle.calculateArea();
   }
@@ -71,7 +68,6 @@ public class ShapeManager {
    *
    * @return the perimeter of this rectangle
    */
-
   public double calculateRectanglePerimeter() {
     return rectangle.calculatePerimeter();
   }
@@ -81,7 +77,6 @@ public class ShapeManager {
    *
    * @return the area of this rectangle
    */
-
   public double calculateRectangleArea() {
     return rectangle.calculateArea();
   }
@@ -91,7 +86,6 @@ public class ShapeManager {
    *
    * @return the perimeter of this circle
    */
-
   public double calculateCirclePerimeter() {
     return circle.calculatePerimeter();
   }
@@ -101,7 +95,6 @@ public class ShapeManager {
    *
    * @return the area of this circle
    */
-
   public double calculateCircleArea() {
     return circle.calculateArea();
   }
