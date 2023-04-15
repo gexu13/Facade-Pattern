@@ -48,8 +48,7 @@ public class Triangle implements Shape {
 
   @Override
   public void draw() {
-    String s = String.format("Drawing a triangle...with its base of %.2f and height of %.2f.", base,
-        height);
+    String s = String.format("Drawing a triangle...with its base of %.2f and height of %.2f.", base, height);
     System.out.println(s);
   }
 
@@ -79,8 +78,7 @@ public class Rectangle implements Shape {
 
   @Override
   public void draw() {
-    String s = String.format("Drawing a rectangle...with its length of %.2f and width of %.2f.",
-        length, width);
+    String s = String.format("Drawing a rectangle...with its length of %.2f and width of %.2f.", length, width);
     System.out.println(s);
   }
 
@@ -129,8 +127,7 @@ public class ShapeManager {
   private final Shape rectangle;
   private final Shape circle;
   
-  public ShapeManager(double triangleBase, double triangleHeight, double rectangleLength,
-      double rectangleWidth, double circleDiameter) {
+  public ShapeManager(double triangleBase, double triangleHeight, double rectangleLength, double rectangleWidth, double circleDiameter) {
     triangle = new Triangle(triangleBase, triangleHeight);
     rectangle = new Rectangle(rectangleLength, rectangleWidth);
     circle = new Circle(circleDiameter);
