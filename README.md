@@ -120,7 +120,7 @@ public class Circle implements Shape {
 }
 
 ```
-Step 3: Create Facade Interface
+Step 3: Create Facade Class
 ```Java
 public class ShapeManager {
   private final Shape triangle;
