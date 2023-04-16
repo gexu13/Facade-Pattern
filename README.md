@@ -172,6 +172,7 @@ public class ShapeManager {
 
 ```
 Step 4: Create driver(Demo) class
+        The facade class(shapeManager) provides all the functionalies of all shapes
 ```Java
 public class Demo {
 
